@@ -7,11 +7,10 @@ int square(int a, int b){
     }
     return power;
 }
-
 int main(){
-    int x, n, result;
-    scanf("%d %d",&x,&n);
-    result = square(x,n);
-    printf("%d power of %d is: %d\n",x,n,result);
+    int i, n = 2;
+    for(i=1; i<=10; i++){
+        printf("%d %d \n",i,square(i,n));
+    }
     return 0;
 }
